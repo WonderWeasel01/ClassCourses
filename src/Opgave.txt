@@ -1,0 +1,126 @@
+Opgaveark Klasser 251023 Kursus klasse
+
+
+Opgave 1)
+Programmer en klasse Kursus med de private medlemsvariable:
+
+
+kursusNr:int
+kursusNavn: String
+antalEcts:int
+ugeDag: String  //Hvilken ugedag afholdes kurset
+tid: String          //Tidspunktet kurset afholdes eks: 10-12
+
+
+Implementer konstruktører, setter og -getter metoder samt toString metode.
+
+
+Implementer et main, hvor der oprettes nogle Kursus objekter og udskriv oplysninger om disse kurser.
+
+
+Opgave 2)
+Tilføj nu følgende private medlemsvariable til klassen Kursus:
+
+
+deltagere: String []   //et array af Strings
+antalDeltagere: int
+
+
+Arrayet deltagere skal indeholde navnene på deltagere på kurset.
+
+
+Tilføj følgende statement i alle konstruktører:
+antalDeltagere=0;  //Fra start er der 0 deltagere.
+String [] deltagere=new String[40] // Der er maks. plads til 40 deltagere på et kursus
+
+
+
+
+Opgave 3)
+Implementer en metode til klassen Kursus:
+public void tilfoejStuderende(String navn){
+
+
+}
+
+
+Metoden skal indsætte en værdien af parameteren navn i arrayet deltagere og  antalDeltagere skal tælles op med 1.
+
+
+Test metoden tilfoejStuderende i et main.
+
+
+Opgave 4)
+Implementer i Main-delen af projektet en funktion:
+
+
+public static void udskrivKursus(Kursus k){
+
+
+}
+Funktionen skal udskrive alle oplysninger om kurset k, også navnene på de studerende der deltager i kurset. Test funktionen.
+Opgave 5)
+Programmer en klasse Studerende- med de private medlemsvariable:
+
+
+stdNr: int
+fnavn: String
+enavm: String
+adresse: String
+mobil: String
+
+
+Implementer konstruktører, setter og -getter metoder samt toString metode.
+
+
+Implementer et main, hvor der oprettes nogle Studerende objekter og udskriv oplysninger om disse studerende.
+
+
+
+
+Opgave 6)
+Der skal nu ændres i programmet i opgave 2 og 3.
+
+
+Den private medlemsvariabel deltagere i klassen Kursus skal nu være et array af Studerende.
+
+
+deltagere: Studerende []
+
+
+Metoden tilfoejStuderende skal nu ændres til følgende:
+
+
+public void tilfoejStuderende(Studerende s){
+
+
+}
+
+
+Test medtoden tilfoejStuderende ved at indsætte nogle Studerende objekter i et Kursus objekt.
+
+
+
+
+Opgave 7)
+Tilret nu metoden
+public static void udskrivKursus(Kursus k){
+
+
+}
+
+
+Så alle oplysninger om kurset udskrives og oplysningerne om alle de studerende der deltager i kurset også udskrives.
+
+
+
+
+Opgave 8)
+Implementer en metode i klassen Kursus:
+
+
+public void frameld(Studerende s){
+}
+
+
+Med denne metode skal det være muligt at en studerende kan framelde sig et kursus. Metoden skal udtage den studerende af arrayet deltagere og nedtælle antalDeltagere med 1.
